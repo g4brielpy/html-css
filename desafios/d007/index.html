@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio-1</title>
+    <link rel="shortcut icon" href="../../hypelinks-ex/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <h1>Imagem Flexível</h1>
+    <hr>
+    <p>Você está vendo a imagem completa? Experimente ampliar o tamanho da sua janela para aproveitar a melhor experiência &#x1f609 Usado o <strong>MAX-width</strong> <br><a href="pag2.html" target="_self" rel="next">pagina002</a></p>
+    
+    <picture>
+        <source media="(max-width: 790px)" srcset="imagens/paisagem-p.png" type="image/png">
+        <source media="(max-width: 1250px)" srcset="imagens/paisagem-m.png" type="image/png">
+        <img src="imagens/paisagem-g.png" alt="paisagem">
+    </picture>
+    <h1>Áudio</h1>
+    <hr>
+    <p>Também podemos colocar áudios em sites, podendo usar o &lt;source&gt; para acresentar formatos diferentes</p>
+    <audio controls preload="metadata">
+        <source src="../../exercícios/ex011/midia/happy-mistake.mp3" type="audio/mpeg">
+        <source src="../../exercícios/ex011/midia/guanacast-33.mp3" type="audio/mpeg">
+        <p>Nagevador não compatível com áudio. <br><a href="../../exercícios/ex011/midia/guanacast-33.mp3" download="Guanacast.mp3" type="audio/mpeg">Baixe aqui</a> - guanacast <br><a href="../../exercícios/ex011/midia/happy-mistake.mp3" download="happy.mp3" type="audio/mpeg">Baixe aqui</a> - Happy Mistake</p>
+    </audio>
+</body>
+</html>

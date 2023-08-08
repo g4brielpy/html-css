@@ -1,0 +1,212 @@
+/* Regras CSS | Fontes importadas */
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'Font-Android';
+    src: url(fontes/idroid.otf)
+    format('opentype');
+}
+@font-face {
+    font-family: 'Bebas Neue';
+    src: url(fontes/BebasNeue-Regular.ttf);
+}
+
+/*Configurações Globais*/
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: var(--cor0);
+}
+
+/*VARIAVEIS*/
+:root{
+    --cor0: #c5ebd6;
+    --cor1: #83e1ad;
+    --cor2: #3ddc84;
+    --cor3: #2fa866;
+    --cor4: #1a5c37;
+    --cor5: #063d1e;
+
+    --fonte1: Arial, Helvetica, sans-serif;
+    --fonte2: 'Bebas Neue', 'cursive';
+    --fonte3: 'Font-Android', sans-serif;
+}
+
+/* Header | Cabeçalho */
+header{
+    background-image: linear-gradient( var(--cor2), var(--cor3), var(--cor4), var(--cor5) );
+    padding: 15px;
+    box-shadow: 0px 2px 5px 1px rgba(0, 0, 0, 0.466);
+}
+header h1{
+    font-size: 3em;
+    font-family: var(--fonte2);
+    color: #ffffff;
+    font-weight: normal;
+    text-align: center;
+    margin: 10px 0px 15px;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.466);
+}
+header p{
+    font-family: var(--fonte1);
+    font-size: 1.2em;
+    color: #ffffffda;
+    text-align: center;
+    max-width: 500px;
+    margin: 0px auto 40px;
+    text-shadow:  1px 1px 1px rgba(0, 0, 0, 0.466);
+}
+
+/* Navegação | Links */
+nav{
+    text-decoration: none;
+}
+nav a{
+    font-family: var(--fonte1);
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--cor0);
+    padding: 10px 15px;
+}
+nav a:hover{
+    background-color: var(--cor3);
+    color: var(--cor5);
+    border-radius: 5px;
+    transition-duration: 0.8s;
+}
+
+/* Main | Corpo do site */
+main{
+    min-width: 400px;
+    max-width: 800px;
+    margin: 1px auto;
+    background-color: #ffffff;
+    padding: 1.2em;
+    box-shadow: 0px 3px 5px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 0px 0px 10px 10px;
+}
+main #titulo-principal {
+    font-size: 2em;
+    font-family: var(--fonte3);
+    color: var(--cor4);
+    margin-bottom: 18px
+}
+main h2{
+    color: var(--cor4);
+    background-image: linear-gradient(to right, var(--cor1), #ffffff00);
+    font-family: var(--fonte3);
+    margin: 0.8em 0;
+    padding-left: 10px;
+}
+main p{
+    font-size: 1.05em;
+    text-align: justify;
+    text-indent: 2em;
+    line-height: 1.5em;
+    font-family: var(--fonte1)
+}
+main span, main strong{
+    color: var(--cor4);
+    font-weight: bolder;
+}
+main strong{
+    background-color: var(--cor0);
+    padding: 2px 5px;
+}
+/* Estilo para links */
+main a{
+    color: var(--cor4);
+    font-weight: bolder;
+    text-decoration: none;
+}
+main a:hover{
+    text-decoration: underline;
+}
+main a[target='_blank']::after{ /*Para todos so links com o valor '_blank' em TARGET */
+    content: '\00A0\1f517';
+}
+
+/*Estilo para Imagens*/
+picture img{
+    width: 100%;
+}
+.image{
+    text-align: center; 
+    margin: 15px auto;
+}
+.img-droid{
+    max-width: 350px;
+}
+
+/*Vídeo Incorporado do YouTube*/
+div.video{
+    /*text-align: center;
+    background-color: var(--cor5);
+    margin: 20px -19.5px;
+    padding: 20px;*/
+    position: relative;
+    background-color: var(--cor4);
+    height: 0px;
+    margin: 20px -19.5px 15px;
+    padding-bottom: 59%;
+}
+.video iframe{
+    /*width: 99%;*/
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+
+/* Área destaque | Aside */
+#destaque{
+    border-radius: 1em;
+    box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.350);
+    margin-bottom: 1.1em;
+}
+#destaque .topo{
+    background-color: var(--cor3);
+    color: #ffffff;
+    padding: 1em;
+    border-radius: 0.8em 0.8em 0px 0px;
+}
+.topo h3{
+    font-family: var(--fonte1);
+    font-weight: normal;
+}
+#destaque .corpo{
+    background-color: var(--cor0);
+    padding: 1em;
+    border-radius: 0px 0px 0.8em 0.8em;
+}
+#destaque p{
+    margin-bottom: 0.7em;
+}
+/* Lista | Destaque */
+.lista-destaque{
+    font-size: 1.1em;
+    list-style-type: '\2714\0020'; /*Não compatível com todos os navegadores*/ 
+    columns: 2;
+    list-style-position: inside; 
+    margin-bottom: 0.9em;
+}
+
+/*Rodapé | Footer*/
+footer{
+    background-color: var(--cor4);
+    text-align: center;
+    padding: 0.5em;
+    margin-top: 1em
+}
+footer p{
+    color: #ffffff;
+    font-family: var(--fonte1);
+    font-size: 0.9em;
+}
+footer span{
+    color: var(--cor1);
+    font-weight: bold;
+}
