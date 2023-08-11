@@ -13,8 +13,9 @@ body{
 }
 
 .box{
-    width: 300px; 
+    width: 500px; 
     height: 300px;
+    margin: 15px;
     display: inline-block;
     background-color: lightgray;
     border: 2px solid black;
@@ -28,5 +29,13 @@ body{
     background-image: linear-gradient(to bottom, yellow, orange);
 }
 #b3{
-    background-image: url(../img/pattern003.png); /*URL Interna*/
+    /*background-repeat: no-repeat;*/
+    background: url('../img/pattern003.png') no-repeat;
+    
+    background-size: cover;
+    /*
+    Contain: estica a imagem sem alterar suas proporções
+    
+    cover: altera as dimensões da imagem até que ela preencha todo conteiner.
+    */
 }
