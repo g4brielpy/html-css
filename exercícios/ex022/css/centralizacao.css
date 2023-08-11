@@ -1,0 +1,19 @@
+@charset "UTF-8";
+
+#fora{
+    height: 90vh;
+    background-color: rgba(154, 79, 224, 0.904);
+    position: relative;
+    border-radius: 10%
+}
+
+#dentro{
+    height: 200px;
+    width: 300px;
+    background-color: rgba(245, 245, 29, 0.877);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10%
+}
