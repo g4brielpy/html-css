@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Centralizando uma box verticalmente">
+    <title>Alinhamento verticalmente</title>
+    <!-- Estilo CSS -->
+    <style>
+        #box{
+            position: relative;
+            height: 98vh;
+            background: rgb(202, 80, 80) url('img/target001.png') no-repeat center center ;
+            background-size: cover;
+            padding: 10px;
+        }
+        #conteudo{
+            position: absolute;
+            height: 400px;
+            width: 400px;
+            background: rgba(45, 106, 197, 0.466) url('img/target001.png') no-repeat center center;
+
+            left: calc(50% - 200px);
+            top: calc(50% - 200px);
+            /*
+            left: 50%;
+            top: 50%;
+
+            transform: translate(-50%, -50%);
+            */
+        }
+    </style>
+</head>
+<body>
+    <section id="box"> <!-- Container | agrupamento de elementos -->
+        <article id="conteudo">
+            <!-- conteudo da página -->
+        </article>
+    </section>
+</body>
+</html>
