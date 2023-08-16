@@ -8,20 +8,22 @@
     <!-- Estilo CSS -->
     <style>
         #box{
+            margin: 15px auto;
             position: relative;
-            height: 98vh;
+            height: 95vh;
+            width: 95vw;
             background: rgb(202, 80, 80) url('img/target001.png') no-repeat center center ;
             background-size: cover;
             padding: 10px;
         }
         #conteudo{
             position: absolute;
-            height: 400px;
-            width: 400px;
+            height: 40%; /*metade do valor é igual a 20%*/
+            width: 40%; /*metade do valor é igual a 20%*/
             background: rgba(45, 106, 197, 0.466) url('img/target001.png') no-repeat center center;
 
-            left: calc(50% - 200px);
-            top: calc(50% - 200px);
+            left: calc(50% - 20%); /* 'calc' com 50% de valor do "LEFT" - metade do valor do "HEIGHT"*/
+            top: calc(50% - 20%);  /* 'calc' com 50% do valor do "TOP" - metade do valor do WIDTH*/
             /*
             left: 50%;
             top: 50%;
