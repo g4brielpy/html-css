@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700&display=swap')/*font-family: 'Passion One', cursive;*/;
 @import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap')/*font-family: 'Sriracha', cursive;*/;
 
-/*C. globrais*/
+/*Conf. globrais*/
 *{
     margin: 0;
     padding: 0;
@@ -39,7 +39,7 @@ header{
     background-color: #000;
     color: #fff;
     text-align: center;
-    padding: 3rem;
+    padding: 3.2rem;
 }
 header h1{
     font-size: 10vw;
@@ -53,11 +53,23 @@ header a{
 header a:hover{
     text-decoration: underline;
 }
-main{
-
-}
+main{ }
 main p{
     font-family:'Sriracha', cursive;
-    font-size: 4vw;
+    font-size: 3.5vw;
     line-height: 2em;
+}
+
+section{
+    padding: 5rem;
+}
+section.parallax{
+    background: url(../img/background001.jpg) no-repeat fixed center right;
+    background-size: cover
+}
+section.parallax p{
+    background-color: #00000083;
+    color: #fff;
+    max-width: fit-content;
+    padding: 1rem;;
 }
