@@ -45,6 +45,7 @@ header{
 header h1{
     font-size: 10vw;
     font-family: 'Passion One', cursive;
+    font-variant: small-caps;
 }
 header a{
     color: #fff;
