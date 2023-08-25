@@ -9,7 +9,7 @@
     padding: 0;
     box-sizing: border-box;
     font-size: 1em;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .mt-1{ margin-top: 1rem;}
@@ -86,4 +86,12 @@ footer{
     padding: 0.7em;
     color: #fff;
     text-align: center;
+}
+footer P{
+    font-size: 1.05rem
+}
+footer a{
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
 }
