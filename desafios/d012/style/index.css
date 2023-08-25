@@ -65,11 +65,19 @@ section{
 }
 section.parallax{
     background: url(../img/background001.jpg) no-repeat fixed center right;
-    background-size: cover
+    background-size: cover;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
 }
-section.parallax p{
+section.parallax-2{
+    background: url(../img/background002.jpg) no-repeat fixed left center;
+    background-size: cover;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+}
+section.parallax p, section.parallax-2 p{
     background-color: #00000083;
     color: #fff;
     max-width: fit-content;
-    padding: 1rem;;
+    padding: 0.3rem;
 }
