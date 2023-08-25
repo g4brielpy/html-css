@@ -54,12 +54,12 @@ header a{
 header a:hover{
     text-decoration: underline;
 }
-main p{
+
+section p{
     font-family:'Sriracha', cursive;
     font-size: 3.5vw;
     line-height: 2em;
 }
-
 section{
     padding: 5rem;
 }
@@ -80,4 +80,10 @@ section.parallax p, section.parallax-2 p{
     color: #fff;
     max-width: fit-content;
     padding: 0.3rem;
+}
+footer{
+    background-color: #000;
+    padding: 0.7em;
+    color: #fff;
+    text-align: center;
 }
