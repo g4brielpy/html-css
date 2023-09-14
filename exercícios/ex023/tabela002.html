@@ -12,19 +12,22 @@
         }
         h1{
             font-size: 1.5rem;
-            color: #00000088;
+            color: #000000c0;
         }
         table{
             width: 500px;
             border-collapse: collapse;
         }
         caption{
-            color: rgba(97, 12, 12, 0.842);
+            color: #ffffff;
+            background-color: #00000088;
             font-weight: bold;
-            font-size: 1.5rem;
-            margin-bottom: 15px;
+            font-size: 1.1rem;
+            margin-bottom: 5px;
+            padding: 8px 0;
+            border: 1px solid #00000067
         }
-        thead{
+        thead th, tfoot{
             background-color: #00000088;
             color: #fff;
         }
@@ -40,11 +43,12 @@
 <body>
     <h1>Tabelas Semâticas</h1>
     <table>
-        <caption>Lista de unidades federativas do Brasil por população</caption>
+        <caption>unidades federativas do Brasil</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <!-- SCOPE="COL" - informar que são títulos de uma COLUNA -->
+                <th scope="col">Estado</th>
+                <th scope="col">População</th>
             </tr>
         </thead>
         <tbody>
@@ -159,8 +163,9 @@
         </tbody>
         <tfoot>
             <tr>
-                <th>Total de habitantes</th>
-                <td class="numb">0.000.000.000</td>
+                <!-- SCOPE="ROW" - informar que é um título de um dado que está na mesma linha -->
+                <th scope="row">Total de habitantes</th>
+                <td class="numb">210.147.125</td>
             </tr>
         </tfoot>
     </table>
