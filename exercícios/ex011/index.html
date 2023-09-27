@@ -1,32 +1,62 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>IMG Flexíveis</title>
-    <link rel="shortcut icon" href="../../hypelinks-ex/favicon.ico" type="image/x-icon">
-</head>
-<body>
+    <link
+      rel="shortcut icon"
+      href="../../hypelinks-ex/favicon.ico"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
     <h1>Imagens Flexíveis</h1>
-    <hr>
-    <p>Estou treinando colocar imagens Flexíveis de acordo com a resolução da tela, podendo ser exibida em celular, notebook, tablete, televisão, etc...</p>
-    
+    <hr />
+    <p>
+      Estou treinando colocar imagens Flexíveis de acordo com a resolução da
+      tela, podendo ser exibida em celular, notebook, tablete, televisão, etc...
+    </p>
+
     <picture>
-        <source media="(min-width: 1050px)" srcset="imagens/foto-g.png" type="image/jpeg">
-        <source media="(min-width: 750px)" srcset="imagens/foto-m.png" type="image/jpeg">
-        <img src="imagens/foto-p.png" alt="paisagem">
+      <source
+        media="(min-width: 1050px)"
+        srcset="imagens/foto-g.png"
+        type="image/jpeg"
+      />
+      <source
+        media="(min-width: 750px)"
+        srcset="imagens/foto-m.png"
+        type="image/jpeg"
+      />
+      <img src="imagens/foto-p.png" alt="paisagem" />
     </picture>
 
     <h1>Áudio</h1>
-    <hr>
-    <p>Vamos aprender a reproduzir áudios em HTML5. para baixar <button><a href="midia/guanacast-33.mp3" download="guanacast.mp3" type="audio/mpeg">click aqui</a></button></p>
+    <hr />
+    <p>
+      Vamos aprender a reproduzir áudios em HTML5. para baixar
+      <button>
+        <a
+          href="midia/guanacast-33.mp3"
+          download="guanacast.mp3"
+          type="audio/mpeg"
+          >click aqui</a
+        >
+      </button>
+    </p>
     <audio controls preload="metadata">
-        <source src="midia/guanacast-33.mp3" type="audio/mpeg"> <!-- vai tentar carregar esse aqui primeiro -->
-        <source src="midia/guanacast-33.ogg" type="audio/ogg">
-        <source src="midia/guanacast-33.wav" type="audio/wav">
-        <!-- tentar evitar esse tipo de arquivo, por ser pessado -->
-        <p>Navegador não compatível com áudio. <a href="midia/guanacast-33.mp3"> baixar aqui mp3</a> </p>
-        <!-- caso o navegador não seja compatível com áudio, a tag <p> sera exibida -->
-    </audio> <!-- mp3 wav ogg -->
-</body>
+      <source src="midia/guanacast-33.mp3" type="audio/mpeg" />
+      <!-- vai tentar carregar esse aqui primeiro -->
+      <source src="midia/guanacast-33.ogg" type="audio/ogg" />
+      <source src="midia/guanacast-33.wav" type="audio/wav" />
+      <!-- tentar evitar esse tipo de arquivo, por ser pessado -->
+      <p>
+        Navegador não compatível com áudio.
+        <a href="midia/guanacast-33.mp3"> baixar aqui mp3</a>
+      </p>
+      <!-- caso o navegador não seja compatível com áudio, a tag <p> sera exibida -->
+    </audio>
+    <!-- mp3 wav ogg -->
+  </body>
 </html>
