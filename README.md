@@ -1,3 +1,2 @@
 # html-css
- Curso de HTML5 e CSS3 do Gustavo Guanabara/ Curso em Vídeo
- teste de sycn
+ Curso de HTML5 e CSS3 do Gustavo Guanabara
